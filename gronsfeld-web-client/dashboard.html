@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Gronsfeld Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- Левая панель -->
+    <aside class="sidebar">
+        <h2>Gronsfeld</h2>
+
+        <button id="encryptBtn" class="menu-btn">🔐 Шифровать</button>
+<button id="decryptBtn" class="menu-btn">🔓 Расшифровать</button>
+<button id="textsBtn" class="menu-btn">📄 Мои тексты</button>
+<button id="historyBtn" class="menu-btn">🕘 История</button>
+<button id="statsBtn" class="menu-btn">📊 Статистика</button>
+<button id="changePasswordBtn" class="menu-btn" style="margin-top:15px">
+    🔑 Сменить пароль
+</button>
+
+        <hr>
+
+        <button id="logoutBtn" class="danger">🚪 Выйти</button>
+    </aside>
+
+    <!-- Контент -->
+    <main class="content" id="content">
+        <h2>Добро пожаловать 👋</h2>
+        <p>Выберите действие слева</p>
+    </main>
+
+</div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+.app {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    background: #020617;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    color: #38bdf8;
+}
+
+.sidebar button {
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 10px;
+    background: #020617;
+    border: 1px solid #1e293b;
+    color: #e5e7eb;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.sidebar button:hover {
+    background: #1e293b;
+}
+
+.sidebar .danger {
+    border-color: #7f1d1d;
+    color: #fecaca;
+}
+
+/* Content */
+.content {
+    flex: 1;
+    padding: 25px;
+    overflow-y: auto;
+}
+
+textarea, input {
+    width: 100%;
+    background: #020617;
+    border: 1px solid #1e293b;
+    color: #e5e7eb;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+button {
+    background: #38bdf8;
+    border: none;
+    color: #020617;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+pre {
+    background: #020617;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+#content {
+    opacity: 1;
+    transform: translateY(0);
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
+}
+
+/* состояние исчезновения */
+#content.fade-out {
+    opacity: 0;
+    transform: translateY(12px);
+}
+
+
+button {
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        background 0.15s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+.menu-btn {
+    background: transparent;
+    border: none;
+    color: #ccc;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.menu-btn:hover {
+    background: rgba(255,255,255,0.08);
+    color: #fff;
+}
+
+.menu-btn.active {
+    background: #3498db;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* базовое состояние элементов списка */
+.list-item {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeUp 0.3s ease forwards;
+}
+
+/* ключевая анимация */
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

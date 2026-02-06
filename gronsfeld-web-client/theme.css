@@ -1,0 +1,28 @@
+:root {
+    /* Цвета */
+    --bg-main: #121212;
+    --bg-card: #1e1e1e;
+    --bg-sidebar: #181818;
+
+    --color-text: #ffffff;
+    --color-muted: #aaaaaa;
+
+    --accent-green: #4caf50;
+    --accent-green-hover: #43a047;
+
+    --accent-blue: #2196f3;
+    --accent-blue-hover: #1e88e5;
+
+    --danger: #e74c3c;
+
+    /* Размеры */
+    --radius: 12px;
+    --radius-sm: 8px;
+
+    /* Тени */
+    --shadow-card: 0 10px 40px rgba(0,0,0,0.6);
+
+    /* Анимации */
+    --transition-fast: 0.15s ease;
+    --transition: 0.25s ease;
+}
